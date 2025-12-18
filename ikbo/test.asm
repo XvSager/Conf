@@ -1,5 +1,6 @@
-; Тестовые команды из спецификации
-LOAD 26, R16
-READ R0, 48, R15
-WRITE R9, R25
-ADD R6, 226, R26
+; test.asm
+LOAD 100, R1
+LOAD 200, R2
+WRITE R1, R2
+LOAD 50, R3
+ADD R3, 300, R2
