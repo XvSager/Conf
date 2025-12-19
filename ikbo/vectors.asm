@@ -1,0 +1,59 @@
+LOAD 1, R0
+LOAD 100, R1
+WRITE R0, R1     ; [100] = 1
+
+LOAD 2, R0
+LOAD 101, R1
+WRITE R0, R1     ; [101] = 2
+
+LOAD 3, R0
+LOAD 102, R1
+WRITE R0, R1     ; [102] = 3
+
+LOAD 4, R0
+LOAD 103, R1
+WRITE R0, R1     ; [103] = 4
+
+LOAD 5, R0
+LOAD 104, R1
+WRITE R0, R1     ; [104] = 5
+
+LOAD 10, R0
+LOAD 200, R2
+WRITE R0, R2     ; [200] = 10
+
+LOAD 20, R0
+LOAD 201, R2
+WRITE R0, R2     ; [201] = 20
+
+LOAD 30, R0
+LOAD 202, R2
+WRITE R0, R2     ; [202] = 30
+
+LOAD 40, R0
+LOAD 203, R2
+WRITE R0, R2     ; [203] = 40
+
+LOAD 50, R0
+LOAD 204, R2
+WRITE R0, R2     ; [204] = 50
+
+LOAD 1, R5       ; R5 = 1
+LOAD 200, R2     ; R2 = 200
+ADD R5, 100, R2  ; R5 + [R2] = 1 + [200]=10 → [100] = 11
+
+LOAD 2, R5       ; R5 = 2
+LOAD 201, R2     ; R2 = 201
+ADD R5, 101, R2  ; 2 + [201]=20 → [101] = 22
+
+LOAD 3, R5
+LOAD 202, R2
+ADD R5, 102, R2  ; → [102] = 33
+
+LOAD 4, R5
+LOAD 203, R2
+ADD R5, 103, R2  ; → [103] = 44
+
+LOAD 5, R5
+LOAD 204, R2
+ADD R5, 104, R2  ; → [104] = 55
